@@ -3,9 +3,9 @@ class CreateCharacters < ActiveRecord::Migration[6.1]
     create_table :characters do |t|
       t.string :image
       t.string :name
-      t.int :age
-      t.float :weight
-      t.string :history
+      t.integer :age
+      t.integer :weight
+      t.text :history
       t.string :movies
 
       t.timestamps
